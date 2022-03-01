@@ -13,6 +13,7 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 -- Dumping structure for table booking.booking_passengers
+DROP TABLE IF EXISTS `booking_passengers`;
 CREATE TABLE IF NOT EXISTS `booking_passengers` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `flight_id` int(11) DEFAULT NULL,
@@ -39,6 +40,7 @@ CREATE TABLE IF NOT EXISTS `booking_passengers` (
 /*!40000 ALTER TABLE `booking_passengers` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_airline
+DROP TABLE IF EXISTS `bravo_airline`;
 CREATE TABLE IF NOT EXISTS `bravo_airline` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -77,6 +79,7 @@ INSERT INTO `bravo_airline` (`id`, `name`, `image_id`, `create_user`, `update_us
 /*!40000 ALTER TABLE `bravo_airline` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_airport
+DROP TABLE IF EXISTS `bravo_airport`;
 CREATE TABLE IF NOT EXISTS `bravo_airport` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -122,6 +125,7 @@ INSERT INTO `bravo_airport` (`id`, `name`, `code`, `address`, `location_id`, `de
 /*!40000 ALTER TABLE `bravo_airport` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_attrs
+DROP TABLE IF EXISTS `bravo_attrs`;
 CREATE TABLE IF NOT EXISTS `bravo_attrs` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -160,6 +164,7 @@ INSERT INTO `bravo_attrs` (`id`, `name`, `slug`, `service`, `create_user`, `upda
 /*!40000 ALTER TABLE `bravo_attrs` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_attrs_translations
+DROP TABLE IF EXISTS `bravo_attrs_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_attrs_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` bigint(20) DEFAULT NULL,
@@ -178,6 +183,7 @@ CREATE TABLE IF NOT EXISTS `bravo_attrs_translations` (
 /*!40000 ALTER TABLE `bravo_attrs_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_boats
+DROP TABLE IF EXISTS `bravo_boats`;
 CREATE TABLE IF NOT EXISTS `bravo_boats` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -241,6 +247,7 @@ INSERT INTO `bravo_boats` (`id`, `title`, `slug`, `content`, `image_id`, `banner
 /*!40000 ALTER TABLE `bravo_boats` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_boat_dates
+DROP TABLE IF EXISTS `bravo_boat_dates`;
 CREATE TABLE IF NOT EXISTS `bravo_boat_dates` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `target_id` bigint(20) DEFAULT NULL,
@@ -264,6 +271,7 @@ CREATE TABLE IF NOT EXISTS `bravo_boat_dates` (
 /*!40000 ALTER TABLE `bravo_boat_dates` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_boat_term
+DROP TABLE IF EXISTS `bravo_boat_term`;
 CREATE TABLE IF NOT EXISTS `bravo_boat_term` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` int(11) DEFAULT NULL,
@@ -419,6 +427,7 @@ INSERT INTO `bravo_boat_term` (`id`, `term_id`, `target_id`, `create_user`, `upd
 /*!40000 ALTER TABLE `bravo_boat_term` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_boat_translations
+DROP TABLE IF EXISTS `bravo_boat_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_boat_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` int(10) unsigned NOT NULL,
@@ -444,6 +453,7 @@ CREATE TABLE IF NOT EXISTS `bravo_boat_translations` (
 /*!40000 ALTER TABLE `bravo_boat_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_bookings
+DROP TABLE IF EXISTS `bravo_bookings`;
 CREATE TABLE IF NOT EXISTS `bravo_bookings` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `code` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -503,6 +513,7 @@ CREATE TABLE IF NOT EXISTS `bravo_bookings` (
 /*!40000 ALTER TABLE `bravo_bookings` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_booking_coupons
+DROP TABLE IF EXISTS `bravo_booking_coupons`;
 CREATE TABLE IF NOT EXISTS `bravo_booking_coupons` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `booking_id` bigint(20) DEFAULT NULL,
@@ -524,6 +535,7 @@ CREATE TABLE IF NOT EXISTS `bravo_booking_coupons` (
 /*!40000 ALTER TABLE `bravo_booking_coupons` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_booking_meta
+DROP TABLE IF EXISTS `bravo_booking_meta`;
 CREATE TABLE IF NOT EXISTS `bravo_booking_meta` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `booking_id` int(11) DEFAULT NULL,
@@ -541,6 +553,7 @@ CREATE TABLE IF NOT EXISTS `bravo_booking_meta` (
 /*!40000 ALTER TABLE `bravo_booking_meta` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_booking_payments
+DROP TABLE IF EXISTS `bravo_booking_payments`;
 CREATE TABLE IF NOT EXISTS `bravo_booking_payments` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `booking_id` int(11) DEFAULT NULL,
@@ -570,6 +583,7 @@ CREATE TABLE IF NOT EXISTS `bravo_booking_payments` (
 /*!40000 ALTER TABLE `bravo_booking_payments` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_booking_payment_meta
+DROP TABLE IF EXISTS `bravo_booking_payment_meta`;
 CREATE TABLE IF NOT EXISTS `bravo_booking_payment_meta` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `payment_id` int(11) DEFAULT NULL,
@@ -588,6 +602,7 @@ CREATE TABLE IF NOT EXISTS `bravo_booking_payment_meta` (
 /*!40000 ALTER TABLE `bravo_booking_payment_meta` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_booking_time_slots
+DROP TABLE IF EXISTS `bravo_booking_time_slots`;
 CREATE TABLE IF NOT EXISTS `bravo_booking_time_slots` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `booking_id` int(11) DEFAULT NULL,
@@ -609,6 +624,7 @@ CREATE TABLE IF NOT EXISTS `bravo_booking_time_slots` (
 /*!40000 ALTER TABLE `bravo_booking_time_slots` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_cars
+DROP TABLE IF EXISTS `bravo_cars`;
 CREATE TABLE IF NOT EXISTS `bravo_cars` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -672,6 +688,7 @@ INSERT INTO `bravo_cars` (`id`, `title`, `slug`, `content`, `image_id`, `banner_
 /*!40000 ALTER TABLE `bravo_cars` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_car_dates
+DROP TABLE IF EXISTS `bravo_car_dates`;
 CREATE TABLE IF NOT EXISTS `bravo_car_dates` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `target_id` bigint(20) DEFAULT NULL,
@@ -695,6 +712,7 @@ CREATE TABLE IF NOT EXISTS `bravo_car_dates` (
 /*!40000 ALTER TABLE `bravo_car_dates` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_car_term
+DROP TABLE IF EXISTS `bravo_car_term`;
 CREATE TABLE IF NOT EXISTS `bravo_car_term` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` int(11) DEFAULT NULL,
@@ -869,6 +887,7 @@ INSERT INTO `bravo_car_term` (`id`, `term_id`, `target_id`, `create_user`, `upda
 /*!40000 ALTER TABLE `bravo_car_term` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_car_translations
+DROP TABLE IF EXISTS `bravo_car_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_car_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` int(10) unsigned NOT NULL,
@@ -891,6 +910,7 @@ CREATE TABLE IF NOT EXISTS `bravo_car_translations` (
 /*!40000 ALTER TABLE `bravo_car_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_contact
+DROP TABLE IF EXISTS `bravo_contact`;
 CREATE TABLE IF NOT EXISTS `bravo_contact` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -910,6 +930,7 @@ CREATE TABLE IF NOT EXISTS `bravo_contact` (
 /*!40000 ALTER TABLE `bravo_contact` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_coupons
+DROP TABLE IF EXISTS `bravo_coupons`;
 CREATE TABLE IF NOT EXISTS `bravo_coupons` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `code` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -939,6 +960,7 @@ CREATE TABLE IF NOT EXISTS `bravo_coupons` (
 /*!40000 ALTER TABLE `bravo_coupons` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_coupon_services
+DROP TABLE IF EXISTS `bravo_coupon_services`;
 CREATE TABLE IF NOT EXISTS `bravo_coupon_services` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `coupon_id` bigint(20) DEFAULT NULL,
@@ -957,6 +979,7 @@ CREATE TABLE IF NOT EXISTS `bravo_coupon_services` (
 /*!40000 ALTER TABLE `bravo_coupon_services` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_enquiries
+DROP TABLE IF EXISTS `bravo_enquiries`;
 CREATE TABLE IF NOT EXISTS `bravo_enquiries` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `object_id` int(11) DEFAULT NULL,
@@ -980,6 +1003,7 @@ CREATE TABLE IF NOT EXISTS `bravo_enquiries` (
 /*!40000 ALTER TABLE `bravo_enquiries` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_events
+DROP TABLE IF EXISTS `bravo_events`;
 CREATE TABLE IF NOT EXISTS `bravo_events` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -1040,6 +1064,7 @@ INSERT INTO `bravo_events` (`id`, `title`, `slug`, `content`, `image_id`, `banne
 /*!40000 ALTER TABLE `bravo_events` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_event_dates
+DROP TABLE IF EXISTS `bravo_event_dates`;
 CREATE TABLE IF NOT EXISTS `bravo_event_dates` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `target_id` bigint(20) DEFAULT NULL,
@@ -1063,6 +1088,7 @@ CREATE TABLE IF NOT EXISTS `bravo_event_dates` (
 /*!40000 ALTER TABLE `bravo_event_dates` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_event_term
+DROP TABLE IF EXISTS `bravo_event_term`;
 CREATE TABLE IF NOT EXISTS `bravo_event_term` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` int(11) DEFAULT NULL,
@@ -1145,6 +1171,7 @@ INSERT INTO `bravo_event_term` (`id`, `term_id`, `target_id`, `create_user`, `up
 /*!40000 ALTER TABLE `bravo_event_term` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_event_translations
+DROP TABLE IF EXISTS `bravo_event_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_event_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` int(10) unsigned NOT NULL,
@@ -1168,6 +1195,7 @@ CREATE TABLE IF NOT EXISTS `bravo_event_translations` (
 /*!40000 ALTER TABLE `bravo_event_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_flight
+DROP TABLE IF EXISTS `bravo_flight`;
 CREATE TABLE IF NOT EXISTS `bravo_flight` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -1215,6 +1243,7 @@ INSERT INTO `bravo_flight` (`id`, `title`, `code`, `review_score`, `departure_ti
 /*!40000 ALTER TABLE `bravo_flight` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_flight_seat
+DROP TABLE IF EXISTS `bravo_flight_seat`;
 CREATE TABLE IF NOT EXISTS `bravo_flight_seat` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `price` decimal(12,2) DEFAULT NULL,
@@ -1298,6 +1327,7 @@ INSERT INTO `bravo_flight_seat` (`id`, `price`, `max_passengers`, `flight_id`, `
 /*!40000 ALTER TABLE `bravo_flight_seat` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_flight_term
+DROP TABLE IF EXISTS `bravo_flight_term`;
 CREATE TABLE IF NOT EXISTS `bravo_flight_term` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` int(11) DEFAULT NULL,
@@ -1429,6 +1459,7 @@ INSERT INTO `bravo_flight_term` (`id`, `term_id`, `target_id`, `create_user`, `u
 /*!40000 ALTER TABLE `bravo_flight_term` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_hotels
+DROP TABLE IF EXISTS `bravo_hotels`;
 CREATE TABLE IF NOT EXISTS `bravo_hotels` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -1487,6 +1518,7 @@ INSERT INTO `bravo_hotels` (`id`, `title`, `slug`, `content`, `image_id`, `banne
 /*!40000 ALTER TABLE `bravo_hotels` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_hotel_rooms
+DROP TABLE IF EXISTS `bravo_hotel_rooms`;
 CREATE TABLE IF NOT EXISTS `bravo_hotel_rooms` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -1562,6 +1594,7 @@ INSERT INTO `bravo_hotel_rooms` (`id`, `title`, `content`, `image_id`, `gallery`
 /*!40000 ALTER TABLE `bravo_hotel_rooms` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_hotel_room_bookings
+DROP TABLE IF EXISTS `bravo_hotel_room_bookings`;
 CREATE TABLE IF NOT EXISTS `bravo_hotel_room_bookings` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `room_id` bigint(20) DEFAULT NULL,
@@ -1583,6 +1616,7 @@ CREATE TABLE IF NOT EXISTS `bravo_hotel_room_bookings` (
 /*!40000 ALTER TABLE `bravo_hotel_room_bookings` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_hotel_room_dates
+DROP TABLE IF EXISTS `bravo_hotel_room_dates`;
 CREATE TABLE IF NOT EXISTS `bravo_hotel_room_dates` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `target_id` bigint(20) DEFAULT NULL,
@@ -1607,6 +1641,7 @@ CREATE TABLE IF NOT EXISTS `bravo_hotel_room_dates` (
 /*!40000 ALTER TABLE `bravo_hotel_room_dates` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_hotel_room_term
+DROP TABLE IF EXISTS `bravo_hotel_room_term`;
 CREATE TABLE IF NOT EXISTS `bravo_hotel_room_term` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` int(11) DEFAULT NULL,
@@ -1797,6 +1832,7 @@ INSERT INTO `bravo_hotel_room_term` (`id`, `term_id`, `target_id`, `create_user`
 /*!40000 ALTER TABLE `bravo_hotel_room_term` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_hotel_room_translations
+DROP TABLE IF EXISTS `bravo_hotel_room_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_hotel_room_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` int(10) unsigned NOT NULL,
@@ -1818,6 +1854,7 @@ CREATE TABLE IF NOT EXISTS `bravo_hotel_room_translations` (
 /*!40000 ALTER TABLE `bravo_hotel_room_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_hotel_term
+DROP TABLE IF EXISTS `bravo_hotel_term`;
 CREATE TABLE IF NOT EXISTS `bravo_hotel_term` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` int(11) DEFAULT NULL,
@@ -2061,6 +2098,7 @@ INSERT INTO `bravo_hotel_term` (`id`, `term_id`, `target_id`, `create_user`, `up
 /*!40000 ALTER TABLE `bravo_hotel_term` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_hotel_translations
+DROP TABLE IF EXISTS `bravo_hotel_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_hotel_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` int(10) unsigned NOT NULL,
@@ -2084,6 +2122,7 @@ CREATE TABLE IF NOT EXISTS `bravo_hotel_translations` (
 /*!40000 ALTER TABLE `bravo_hotel_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_locations
+DROP TABLE IF EXISTS `bravo_locations`;
 CREATE TABLE IF NOT EXISTS `bravo_locations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -2124,6 +2163,7 @@ INSERT INTO `bravo_locations` (`id`, `name`, `content`, `slug`, `image_id`, `map
 /*!40000 ALTER TABLE `bravo_locations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_location_translations
+DROP TABLE IF EXISTS `bravo_location_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_location_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` bigint(20) DEFAULT NULL,
@@ -2144,6 +2184,7 @@ CREATE TABLE IF NOT EXISTS `bravo_location_translations` (
 /*!40000 ALTER TABLE `bravo_location_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_payouts
+DROP TABLE IF EXISTS `bravo_payouts`;
 CREATE TABLE IF NOT EXISTS `bravo_payouts` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `vendor_id` bigint(20) DEFAULT NULL,
@@ -2167,6 +2208,7 @@ CREATE TABLE IF NOT EXISTS `bravo_payouts` (
 /*!40000 ALTER TABLE `bravo_payouts` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_popups
+DROP TABLE IF EXISTS `bravo_popups`;
 CREATE TABLE IF NOT EXISTS `bravo_popups` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -2188,6 +2230,7 @@ CREATE TABLE IF NOT EXISTS `bravo_popups` (
 /*!40000 ALTER TABLE `bravo_popups` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_popup_translations
+DROP TABLE IF EXISTS `bravo_popup_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_popup_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -2208,6 +2251,7 @@ CREATE TABLE IF NOT EXISTS `bravo_popup_translations` (
 /*!40000 ALTER TABLE `bravo_popup_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_review
+DROP TABLE IF EXISTS `bravo_review`;
 CREATE TABLE IF NOT EXISTS `bravo_review` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `object_id` int(11) DEFAULT NULL,
@@ -2463,6 +2507,7 @@ INSERT INTO `bravo_review` (`id`, `object_id`, `object_model`, `title`, `content
 /*!40000 ALTER TABLE `bravo_review` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_review_meta
+DROP TABLE IF EXISTS `bravo_review_meta`;
 CREATE TABLE IF NOT EXISTS `bravo_review_meta` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `review_id` int(11) DEFAULT NULL,
@@ -3628,6 +3673,7 @@ INSERT INTO `bravo_review_meta` (`id`, `review_id`, `object_id`, `object_model`,
 /*!40000 ALTER TABLE `bravo_review_meta` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_seat_type
+DROP TABLE IF EXISTS `bravo_seat_type`;
 CREATE TABLE IF NOT EXISTS `bravo_seat_type` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `code` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -3652,6 +3698,7 @@ INSERT INTO `bravo_seat_type` (`id`, `code`, `name`, `create_user`, `update_user
 /*!40000 ALTER TABLE `bravo_seat_type` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_seo
+DROP TABLE IF EXISTS `bravo_seo`;
 CREATE TABLE IF NOT EXISTS `bravo_seo` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `object_id` int(11) DEFAULT NULL,
@@ -3675,6 +3722,7 @@ CREATE TABLE IF NOT EXISTS `bravo_seo` (
 /*!40000 ALTER TABLE `bravo_seo` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_services
+DROP TABLE IF EXISTS `bravo_services`;
 CREATE TABLE IF NOT EXISTS `bravo_services` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -3808,6 +3856,7 @@ INSERT INTO `bravo_services` (`id`, `title`, `slug`, `category_id`, `location_id
 /*!40000 ALTER TABLE `bravo_services` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_service_translations
+DROP TABLE IF EXISTS `bravo_service_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_service_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` bigint(20) DEFAULT NULL,
@@ -3829,6 +3878,7 @@ CREATE TABLE IF NOT EXISTS `bravo_service_translations` (
 /*!40000 ALTER TABLE `bravo_service_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_spaces
+DROP TABLE IF EXISTS `bravo_spaces`;
 CREATE TABLE IF NOT EXISTS `bravo_spaces` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -3892,6 +3942,7 @@ INSERT INTO `bravo_spaces` (`id`, `title`, `slug`, `content`, `image_id`, `banne
 /*!40000 ALTER TABLE `bravo_spaces` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_space_dates
+DROP TABLE IF EXISTS `bravo_space_dates`;
 CREATE TABLE IF NOT EXISTS `bravo_space_dates` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `target_id` bigint(20) DEFAULT NULL,
@@ -3915,6 +3966,7 @@ CREATE TABLE IF NOT EXISTS `bravo_space_dates` (
 /*!40000 ALTER TABLE `bravo_space_dates` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_space_term
+DROP TABLE IF EXISTS `bravo_space_term`;
 CREATE TABLE IF NOT EXISTS `bravo_space_term` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` int(11) DEFAULT NULL,
@@ -4086,6 +4138,7 @@ INSERT INTO `bravo_space_term` (`id`, `term_id`, `target_id`, `create_user`, `up
 /*!40000 ALTER TABLE `bravo_space_term` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_space_translations
+DROP TABLE IF EXISTS `bravo_space_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_space_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` int(10) unsigned NOT NULL,
@@ -4109,6 +4162,7 @@ CREATE TABLE IF NOT EXISTS `bravo_space_translations` (
 /*!40000 ALTER TABLE `bravo_space_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_terms
+DROP TABLE IF EXISTS `bravo_terms`;
 CREATE TABLE IF NOT EXISTS `bravo_terms` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -4237,6 +4291,7 @@ INSERT INTO `bravo_terms` (`id`, `name`, `content`, `attr_id`, `slug`, `create_u
 /*!40000 ALTER TABLE `bravo_terms` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_terms_translations
+DROP TABLE IF EXISTS `bravo_terms_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_terms_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` bigint(20) DEFAULT NULL,
@@ -4256,6 +4311,7 @@ CREATE TABLE IF NOT EXISTS `bravo_terms_translations` (
 /*!40000 ALTER TABLE `bravo_terms_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_tours
+DROP TABLE IF EXISTS `bravo_tours`;
 CREATE TABLE IF NOT EXISTS `bravo_tours` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -4324,6 +4380,7 @@ INSERT INTO `bravo_tours` (`id`, `title`, `slug`, `content`, `image_id`, `banner
 /*!40000 ALTER TABLE `bravo_tours` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_tour_category
+DROP TABLE IF EXISTS `bravo_tour_category`;
 CREATE TABLE IF NOT EXISTS `bravo_tour_category` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -4354,6 +4411,7 @@ INSERT INTO `bravo_tour_category` (`id`, `name`, `content`, `slug`, `status`, `_
 /*!40000 ALTER TABLE `bravo_tour_category` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_tour_category_translations
+DROP TABLE IF EXISTS `bravo_tour_category_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_tour_category_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` bigint(20) DEFAULT NULL,
@@ -4373,6 +4431,7 @@ CREATE TABLE IF NOT EXISTS `bravo_tour_category_translations` (
 /*!40000 ALTER TABLE `bravo_tour_category_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_tour_dates
+DROP TABLE IF EXISTS `bravo_tour_dates`;
 CREATE TABLE IF NOT EXISTS `bravo_tour_dates` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `target_id` bigint(20) DEFAULT NULL,
@@ -4397,6 +4456,7 @@ CREATE TABLE IF NOT EXISTS `bravo_tour_dates` (
 /*!40000 ALTER TABLE `bravo_tour_dates` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_tour_meta
+DROP TABLE IF EXISTS `bravo_tour_meta`;
 CREATE TABLE IF NOT EXISTS `bravo_tour_meta` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `tour_id` int(11) DEFAULT NULL,
@@ -4436,6 +4496,7 @@ INSERT INTO `bravo_tour_meta` (`id`, `tour_id`, `enable_person_types`, `person_t
 /*!40000 ALTER TABLE `bravo_tour_meta` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_tour_term
+DROP TABLE IF EXISTS `bravo_tour_term`;
 CREATE TABLE IF NOT EXISTS `bravo_tour_term` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` int(11) DEFAULT NULL,
@@ -4610,6 +4671,7 @@ INSERT INTO `bravo_tour_term` (`id`, `term_id`, `tour_id`, `create_user`, `updat
 /*!40000 ALTER TABLE `bravo_tour_term` ENABLE KEYS */;
 
 -- Dumping structure for table booking.bravo_tour_translations
+DROP TABLE IF EXISTS `bravo_tour_translations`;
 CREATE TABLE IF NOT EXISTS `bravo_tour_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` bigint(20) DEFAULT NULL,
@@ -4638,6 +4700,7 @@ CREATE TABLE IF NOT EXISTS `bravo_tour_translations` (
 /*!40000 ALTER TABLE `bravo_tour_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_inbox
+DROP TABLE IF EXISTS `core_inbox`;
 CREATE TABLE IF NOT EXISTS `core_inbox` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `from_user` bigint(20) DEFAULT NULL,
@@ -4657,6 +4720,7 @@ CREATE TABLE IF NOT EXISTS `core_inbox` (
 /*!40000 ALTER TABLE `core_inbox` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_inbox_messages
+DROP TABLE IF EXISTS `core_inbox_messages`;
 CREATE TABLE IF NOT EXISTS `core_inbox_messages` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `inbox_id` bigint(20) DEFAULT NULL,
@@ -4677,6 +4741,7 @@ CREATE TABLE IF NOT EXISTS `core_inbox_messages` (
 /*!40000 ALTER TABLE `core_inbox_messages` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_languages
+DROP TABLE IF EXISTS `core_languages`;
 CREATE TABLE IF NOT EXISTS `core_languages` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `locale` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -4701,6 +4766,7 @@ INSERT INTO `core_languages` (`id`, `locale`, `name`, `flag`, `status`, `create_
 /*!40000 ALTER TABLE `core_languages` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_menus
+DROP TABLE IF EXISTS `core_menus`;
 CREATE TABLE IF NOT EXISTS `core_menus` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -4721,6 +4787,7 @@ INSERT INTO `core_menus` (`id`, `name`, `items`, `create_user`, `update_user`, `
 /*!40000 ALTER TABLE `core_menus` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_menu_translations
+DROP TABLE IF EXISTS `core_menu_translations`;
 CREATE TABLE IF NOT EXISTS `core_menu_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` int(10) unsigned NOT NULL,
@@ -4742,6 +4809,7 @@ INSERT INTO `core_menu_translations` (`id`, `origin_id`, `locale`, `items`, `cre
 /*!40000 ALTER TABLE `core_menu_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_model_has_permissions
+DROP TABLE IF EXISTS `core_model_has_permissions`;
 CREATE TABLE IF NOT EXISTS `core_model_has_permissions` (
   `permission_id` int(10) unsigned NOT NULL,
   `model_type` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -4756,6 +4824,7 @@ CREATE TABLE IF NOT EXISTS `core_model_has_permissions` (
 /*!40000 ALTER TABLE `core_model_has_permissions` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_model_has_roles
+DROP TABLE IF EXISTS `core_model_has_roles`;
 CREATE TABLE IF NOT EXISTS `core_model_has_roles` (
   `role_id` int(10) unsigned NOT NULL,
   `model_type` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -4788,6 +4857,7 @@ INSERT INTO `core_model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
 /*!40000 ALTER TABLE `core_model_has_roles` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_news
+DROP TABLE IF EXISTS `core_news`;
 CREATE TABLE IF NOT EXISTS `core_news` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -4820,6 +4890,7 @@ INSERT INTO `core_news` (`id`, `title`, `content`, `slug`, `status`, `cat_id`, `
 /*!40000 ALTER TABLE `core_news` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_news_category
+DROP TABLE IF EXISTS `core_news_category`;
 CREATE TABLE IF NOT EXISTS `core_news_category` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -4852,6 +4923,7 @@ INSERT INTO `core_news_category` (`id`, `name`, `content`, `slug`, `status`, `_l
 /*!40000 ALTER TABLE `core_news_category` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_news_category_translations
+DROP TABLE IF EXISTS `core_news_category_translations`;
 CREATE TABLE IF NOT EXISTS `core_news_category_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` int(10) unsigned NOT NULL,
@@ -4871,6 +4943,7 @@ CREATE TABLE IF NOT EXISTS `core_news_category_translations` (
 /*!40000 ALTER TABLE `core_news_category_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_news_tag
+DROP TABLE IF EXISTS `core_news_tag`;
 CREATE TABLE IF NOT EXISTS `core_news_tag` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `news_id` int(11) DEFAULT NULL,
@@ -4888,6 +4961,7 @@ CREATE TABLE IF NOT EXISTS `core_news_tag` (
 /*!40000 ALTER TABLE `core_news_tag` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_news_translations
+DROP TABLE IF EXISTS `core_news_translations`;
 CREATE TABLE IF NOT EXISTS `core_news_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` int(10) unsigned NOT NULL,
@@ -4907,6 +4981,7 @@ CREATE TABLE IF NOT EXISTS `core_news_translations` (
 /*!40000 ALTER TABLE `core_news_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_notifications
+DROP TABLE IF EXISTS `core_notifications`;
 CREATE TABLE IF NOT EXISTS `core_notifications` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `from_user` bigint(20) DEFAULT NULL,
@@ -4929,6 +5004,7 @@ CREATE TABLE IF NOT EXISTS `core_notifications` (
 /*!40000 ALTER TABLE `core_notifications` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_pages
+DROP TABLE IF EXISTS `core_pages`;
 CREATE TABLE IF NOT EXISTS `core_pages` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `slug` varchar(255) CHARACTER SET utf8 NOT NULL,
@@ -4967,6 +5043,7 @@ INSERT INTO `core_pages` (`id`, `slug`, `title`, `content`, `short_desc`, `statu
 /*!40000 ALTER TABLE `core_pages` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_page_translations
+DROP TABLE IF EXISTS `core_page_translations`;
 CREATE TABLE IF NOT EXISTS `core_page_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` int(10) unsigned NOT NULL,
@@ -4988,6 +5065,7 @@ CREATE TABLE IF NOT EXISTS `core_page_translations` (
 /*!40000 ALTER TABLE `core_page_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_permissions
+DROP TABLE IF EXISTS `core_permissions`;
 CREATE TABLE IF NOT EXISTS `core_permissions` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -5111,6 +5189,7 @@ INSERT INTO `core_permissions` (`id`, `name`, `guard_name`, `created_at`, `updat
 /*!40000 ALTER TABLE `core_permissions` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_roles
+DROP TABLE IF EXISTS `core_roles`;
 CREATE TABLE IF NOT EXISTS `core_roles` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -5131,6 +5210,7 @@ INSERT INTO `core_roles` (`id`, `name`, `guard_name`, `origin_id`, `lang`, `crea
 /*!40000 ALTER TABLE `core_roles` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_role_has_permissions
+DROP TABLE IF EXISTS `core_role_has_permissions`;
 CREATE TABLE IF NOT EXISTS `core_role_has_permissions` (
   `permission_id` int(10) unsigned NOT NULL,
   `role_id` int(10) unsigned NOT NULL,
@@ -5286,6 +5366,7 @@ INSERT INTO `core_role_has_permissions` (`permission_id`, `role_id`) VALUES
 /*!40000 ALTER TABLE `core_role_has_permissions` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_settings
+DROP TABLE IF EXISTS `core_settings`;
 CREATE TABLE IF NOT EXISTS `core_settings` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -5507,6 +5588,7 @@ INSERT INTO `core_settings` (`id`, `name`, `group`, `val`, `autoload`, `create_u
 /*!40000 ALTER TABLE `core_settings` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_subscribers
+DROP TABLE IF EXISTS `core_subscribers`;
 CREATE TABLE IF NOT EXISTS `core_subscribers` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -5525,6 +5607,7 @@ CREATE TABLE IF NOT EXISTS `core_subscribers` (
 /*!40000 ALTER TABLE `core_subscribers` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_tags
+DROP TABLE IF EXISTS `core_tags`;
 CREATE TABLE IF NOT EXISTS `core_tags` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -5552,6 +5635,7 @@ INSERT INTO `core_tags` (`id`, `name`, `slug`, `content`, `create_user`, `update
 /*!40000 ALTER TABLE `core_tags` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_tag_translations
+DROP TABLE IF EXISTS `core_tag_translations`;
 CREATE TABLE IF NOT EXISTS `core_tag_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` int(10) unsigned NOT NULL,
@@ -5571,6 +5655,7 @@ CREATE TABLE IF NOT EXISTS `core_tag_translations` (
 /*!40000 ALTER TABLE `core_tag_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_templates
+DROP TABLE IF EXISTS `core_templates`;
 CREATE TABLE IF NOT EXISTS `core_templates` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -5599,6 +5684,7 @@ INSERT INTO `core_templates` (`id`, `title`, `content`, `type_id`, `create_user`
 /*!40000 ALTER TABLE `core_templates` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_template_translations
+DROP TABLE IF EXISTS `core_template_translations`;
 CREATE TABLE IF NOT EXISTS `core_template_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` int(10) unsigned NOT NULL,
@@ -5623,6 +5709,7 @@ INSERT INTO `core_template_translations` (`id`, `origin_id`, `locale`, `title`, 
 /*!40000 ALTER TABLE `core_template_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_translations
+DROP TABLE IF EXISTS `core_translations`;
 CREATE TABLE IF NOT EXISTS `core_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `locale` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -10403,6 +10490,7 @@ INSERT INTO `core_translations` (`id`, `locale`, `string`, `parent_id`, `create_
 /*!40000 ALTER TABLE `core_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_vendor_plans
+DROP TABLE IF EXISTS `core_vendor_plans`;
 CREATE TABLE IF NOT EXISTS `core_vendor_plans` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -10422,6 +10510,7 @@ CREATE TABLE IF NOT EXISTS `core_vendor_plans` (
 /*!40000 ALTER TABLE `core_vendor_plans` ENABLE KEYS */;
 
 -- Dumping structure for table booking.core_vendor_plan_meta
+DROP TABLE IF EXISTS `core_vendor_plan_meta`;
 CREATE TABLE IF NOT EXISTS `core_vendor_plan_meta` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `vendor_plan_id` int(11) NOT NULL,
@@ -10443,6 +10532,7 @@ CREATE TABLE IF NOT EXISTS `core_vendor_plan_meta` (
 /*!40000 ALTER TABLE `core_vendor_plan_meta` ENABLE KEYS */;
 
 -- Dumping structure for table booking.jobs
+DROP TABLE IF EXISTS `jobs`;
 CREATE TABLE IF NOT EXISTS `jobs` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `queue` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -10460,6 +10550,7 @@ CREATE TABLE IF NOT EXISTS `jobs` (
 /*!40000 ALTER TABLE `jobs` ENABLE KEYS */;
 
 -- Dumping structure for table booking.location_category
+DROP TABLE IF EXISTS `location_category`;
 CREATE TABLE IF NOT EXISTS `location_category` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -10490,6 +10581,7 @@ INSERT INTO `location_category` (`id`, `name`, `icon_class`, `content`, `slug`, 
 /*!40000 ALTER TABLE `location_category` ENABLE KEYS */;
 
 -- Dumping structure for table booking.location_category_translations
+DROP TABLE IF EXISTS `location_category_translations`;
 CREATE TABLE IF NOT EXISTS `location_category_translations` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `origin_id` bigint(20) DEFAULT NULL,
@@ -10509,6 +10601,7 @@ CREATE TABLE IF NOT EXISTS `location_category_translations` (
 /*!40000 ALTER TABLE `location_category_translations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.media_files
+DROP TABLE IF EXISTS `media_files`;
 CREATE TABLE IF NOT EXISTS `media_files` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `file_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -10762,6 +10855,7 @@ INSERT INTO `media_files` (`id`, `file_name`, `file_path`, `file_size`, `file_ty
 /*!40000 ALTER TABLE `media_files` ENABLE KEYS */;
 
 -- Dumping structure for table booking.migrations
+DROP TABLE IF EXISTS `migrations`;
 CREATE TABLE IF NOT EXISTS `migrations` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `migration` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -10843,6 +10937,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 
 -- Dumping structure for table booking.notifications
+DROP TABLE IF EXISTS `notifications`;
 CREATE TABLE IF NOT EXISTS `notifications` (
   `id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
   `type` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -10861,6 +10956,7 @@ CREATE TABLE IF NOT EXISTS `notifications` (
 /*!40000 ALTER TABLE `notifications` ENABLE KEYS */;
 
 -- Dumping structure for table booking.password_resets
+DROP TABLE IF EXISTS `password_resets`;
 CREATE TABLE IF NOT EXISTS `password_resets` (
   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `token` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -10873,6 +10969,7 @@ CREATE TABLE IF NOT EXISTS `password_resets` (
 /*!40000 ALTER TABLE `password_resets` ENABLE KEYS */;
 
 -- Dumping structure for table booking.social_forums
+DROP TABLE IF EXISTS `social_forums`;
 CREATE TABLE IF NOT EXISTS `social_forums` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -10901,6 +10998,7 @@ INSERT INTO `social_forums` (`id`, `name`, `content`, `slug`, `status`, `icon`, 
 /*!40000 ALTER TABLE `social_forums` ENABLE KEYS */;
 
 -- Dumping structure for table booking.social_groups
+DROP TABLE IF EXISTS `social_groups`;
 CREATE TABLE IF NOT EXISTS `social_groups` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -10926,6 +11024,7 @@ CREATE TABLE IF NOT EXISTS `social_groups` (
 /*!40000 ALTER TABLE `social_groups` ENABLE KEYS */;
 
 -- Dumping structure for table booking.social_group_user
+DROP TABLE IF EXISTS `social_group_user`;
 CREATE TABLE IF NOT EXISTS `social_group_user` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` bigint(20) DEFAULT NULL,
@@ -10943,6 +11042,7 @@ CREATE TABLE IF NOT EXISTS `social_group_user` (
 /*!40000 ALTER TABLE `social_group_user` ENABLE KEYS */;
 
 -- Dumping structure for table booking.social_posts
+DROP TABLE IF EXISTS `social_posts`;
 CREATE TABLE IF NOT EXISTS `social_posts` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `content` text COLLATE utf8mb4_unicode_ci,
@@ -10970,6 +11070,7 @@ CREATE TABLE IF NOT EXISTS `social_posts` (
 /*!40000 ALTER TABLE `social_posts` ENABLE KEYS */;
 
 -- Dumping structure for table booking.social_post_comments
+DROP TABLE IF EXISTS `social_post_comments`;
 CREATE TABLE IF NOT EXISTS `social_post_comments` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `post_id` bigint(20) DEFAULT NULL,
@@ -10991,6 +11092,7 @@ CREATE TABLE IF NOT EXISTS `social_post_comments` (
 /*!40000 ALTER TABLE `social_post_comments` ENABLE KEYS */;
 
 -- Dumping structure for table booking.social_user_follow
+DROP TABLE IF EXISTS `social_user_follow`;
 CREATE TABLE IF NOT EXISTS `social_user_follow` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `from_user` bigint(20) DEFAULT NULL,
@@ -11007,6 +11109,7 @@ CREATE TABLE IF NOT EXISTS `social_user_follow` (
 /*!40000 ALTER TABLE `social_user_follow` ENABLE KEYS */;
 
 -- Dumping structure for table booking.users
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -11073,6 +11176,7 @@ INSERT INTO `users` (`id`, `name`, `first_name`, `last_name`, `email`, `email_ve
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 -- Dumping structure for table booking.user_meta
+DROP TABLE IF EXISTS `user_meta`;
 CREATE TABLE IF NOT EXISTS `user_meta` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
@@ -11091,6 +11195,7 @@ CREATE TABLE IF NOT EXISTS `user_meta` (
 /*!40000 ALTER TABLE `user_meta` ENABLE KEYS */;
 
 -- Dumping structure for table booking.user_transactions
+DROP TABLE IF EXISTS `user_transactions`;
 CREATE TABLE IF NOT EXISTS `user_transactions` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `payable_type` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -11123,6 +11228,7 @@ CREATE TABLE IF NOT EXISTS `user_transactions` (
 /*!40000 ALTER TABLE `user_transactions` ENABLE KEYS */;
 
 -- Dumping structure for table booking.user_transfers
+DROP TABLE IF EXISTS `user_transfers`;
 CREATE TABLE IF NOT EXISTS `user_transfers` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `from_type` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -11155,6 +11261,7 @@ CREATE TABLE IF NOT EXISTS `user_transfers` (
 /*!40000 ALTER TABLE `user_transfers` ENABLE KEYS */;
 
 -- Dumping structure for table booking.user_upgrade_request
+DROP TABLE IF EXISTS `user_upgrade_request`;
 CREATE TABLE IF NOT EXISTS `user_upgrade_request` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
@@ -11175,6 +11282,7 @@ CREATE TABLE IF NOT EXISTS `user_upgrade_request` (
 /*!40000 ALTER TABLE `user_upgrade_request` ENABLE KEYS */;
 
 -- Dumping structure for table booking.user_wallets
+DROP TABLE IF EXISTS `user_wallets`;
 CREATE TABLE IF NOT EXISTS `user_wallets` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `holder_type` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -11218,6 +11326,7 @@ INSERT INTO `user_wallets` (`id`, `holder_type`, `holder_id`, `name`, `slug`, `d
 /*!40000 ALTER TABLE `user_wallets` ENABLE KEYS */;
 
 -- Dumping structure for table booking.user_wishlist
+DROP TABLE IF EXISTS `user_wishlist`;
 CREATE TABLE IF NOT EXISTS `user_wishlist` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `object_id` int(11) DEFAULT NULL,
@@ -11235,6 +11344,7 @@ CREATE TABLE IF NOT EXISTS `user_wishlist` (
 /*!40000 ALTER TABLE `user_wishlist` ENABLE KEYS */;
 
 -- Dumping structure for table booking.vendors_plan_payments
+DROP TABLE IF EXISTS `vendors_plan_payments`;
 CREATE TABLE IF NOT EXISTS `vendors_plan_payments` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `vendor_id` int(11) NOT NULL,
