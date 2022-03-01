@@ -14,7 +14,7 @@ $locale = App::getLocale();
 ?>
 
 <div class="header-logo flex-shrink-0">
-    <h3 class="logo-text"><a href="{{route('admin.index')}}">{{__('Booking Core')}} <span class="app-version">{{config('app.version')}}</span></a></h3>
+    <h3 class="logo-text"><a href="{{route('admin.index')}}">{{__('ArabCode')}} <span class="app-version">{{config('app.version')}}</span></a></h3>
 </div>
 <div class="header-widgets d-flex flex-grow-1">
     <div class="widgets-left d-flex flex-grow-1 align-items-center">
