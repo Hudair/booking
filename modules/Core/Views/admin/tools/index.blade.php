@@ -72,7 +72,7 @@
                                         </span>
                                             <span class="setting-item-info">
                                             <span class="setting-item-title">{{__("Updater")}}</span>
-                                            <span class="setting-item-desc">{{__("Updater Booking Core")}}</span>
+                                            <span class="setting-item-desc">{{__("Updater ArabCode")}}</span>
                                         </span>
                                         </a>
                                     </div>
@@ -88,7 +88,7 @@
                                         </span>
                                             <span class="setting-item-info">
                                             <span class="setting-item-title">{{__("Plugins")}}</span>
-                                            <span class="setting-item-desc">{{__("Plugins for Booking Core")}}</span>
+                                            <span class="setting-item-desc">{{__("Plugins for ArabCode")}}</span>
                                         </span>
                                         </a>
                                     </div>

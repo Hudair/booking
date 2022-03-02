@@ -53,7 +53,7 @@ class General extends Seeder
                     'group' => "general",
                 ], [
                     'name'  => 'email_from_name',
-                    'val'   => 'Booking Core',
+                    'val'   => 'ArabCode',
                     'group' => "general",
                 ], [
                     'name'  => 'email_from_address',
@@ -83,12 +83,12 @@ class General extends Seeder
                 ],
                 [
                     'name'  => 'footer_text_left',
-                    'val'   => 'Copyright © 2019 by Booking Core',
+                    'val'   => 'Copyright © 2019 by ArabCode',
                     'group' => "general",
                 ],
                 [
                     'name'  => 'footer_text_right',
-                    'val'   => 'Booking Core',
+                    'val'   => 'ArabCode',
                     'group' => "general",
                 ],
                 [
@@ -113,7 +113,7 @@ class General extends Seeder
                 ],
                 [
                     'name' => 'page_contact_desc',
-                    'val' => "<!DOCTYPE html><html><head></head><body><h3>Booking Core</h3><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Tell. + 00 222 444 33</p><p>Email. hello@yoursite.com</p><p>1355 Market St, Suite 900San, Francisco, CA 94103 United States</p></body></html>",
+                    'val' => "<!DOCTYPE html><html><head></head><body><h3>ArabCode</h3><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Tell. + 00 222 444 33</p><p>Email. hello@yoursite.com</p><p>1355 Market St, Suite 900San, Francisco, CA 94103 United States</p></body></html>",
                     'group' => "general",
                 ],
                 [
@@ -406,7 +406,7 @@ class General extends Seeder
                 ],
                 [
                     'name'  => 'page_contact_desc',
-                    'val'   => "<!DOCTYPE html><html><head></head><body><h3>Booking Core</h3><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Tell. + 00 222 444 33</p><p>Email. hello@yoursite.com</p><p>1355 Market St, Suite 900San, Francisco, CA 94103 United States</p></body></html>",
+                    'val'   => "<!DOCTYPE html><html><head></head><body><h3>ArabCode</h3><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Tell. + 00 222 444 33</p><p>Email. hello@yoursite.com</p><p>1355 Market St, Suite 900San, Francisco, CA 94103 United States</p></body></html>",
                     'group' => "general",
                 ],
                 [
@@ -483,7 +483,7 @@ class General extends Seeder
                 ],
                 [
                     'name'  => "site_title",
-                    'val'   => "Booking Core",
+                    'val'   => "ArabCode",
                     'group' => "general",
                 ],
             ]);
@@ -496,17 +496,17 @@ class General extends Seeder
                 ],
                 [
                     'name'  => "site_title",
-                    'val'   => "Booking Core",
+                    'val'   => "ArabCode",
                     'group' => "general",
                 ],
                 [
                     'name'  => "email_header",
-                    'val'   => '<h1 class="site-title" style="text-align: center">Booking Core</h1>',
+                    'val'   => '<h1 class="site-title" style="text-align: center">ArabCode</h1>',
                     'group' => "general",
                 ],
                 [
                     'name'  => "email_footer",
-                    'val'   => '<p class="" style="text-align: center">&copy; 2019 Booking Core. All rights reserved</p>',
+                    'val'   => '<p class="" style="text-align: center">&copy; 2019 ArabCode. All rights reserved</p>',
                     'group' => "general",
                 ],
                 [
@@ -518,9 +518,9 @@ class General extends Seeder
                     'name'  => "user_content_email_registered",
                     'val'   => '<h1 style="text-align: center">Welcome!</h1>
                     <h3>Hello [first_name] [last_name]</h3>
-                    <p>Thank you for signing up with Booking Core! We hope you enjoy your time with us.</p>
+                    <p>Thank you for signing up with ArabCode! We hope you enjoy your time with us.</p>
                     <p>Regards,</p>
-                    <p>Booking Core</p>',
+                    <p>ArabCode</p>',
                     'group' => "user",
                 ],
                 [
@@ -535,7 +535,7 @@ class General extends Seeder
                     <p>Full name: [first_name] [last_name]</p>
                     <p>Email: [email]</p>
                     <p>Regards,</p>
-                    <p>Booking Core</p>',
+                    <p>ArabCode</p>',
                     'group' => "user",
                 ],
                 [
@@ -547,7 +547,7 @@ class General extends Seeder
                     <p>If you did not request a password reset, no further action is required.
                     </p>
                     <p>Regards,</p>
-                    <p>Booking Core</p>',
+                    <p>ArabCode</p>',
                     'group' => "user",
                 ]
             ]);
@@ -676,7 +676,7 @@ class General extends Seeder
                             <p>Content:[note]</p>
                             <p>Service:[service_link]</p>
                             <p>Regards,</p>
-                            <p>Booking Core</p>
+                            <p>ArabCode</p>
                             </div>",
                 'group' => "enquiry",
             ],
@@ -696,7 +696,7 @@ class General extends Seeder
                             <p>Service:[service_link]</p>
                             <p>Vendor:[vendor_link]</p>
                             <p>Regards,</p>
-                            <p>Booking Core</p>",
+                            <p>ArabCode</p>",
                 'group' => "enquiry",
             ],
         ]);
@@ -747,9 +747,9 @@ class General extends Seeder
                 'name'  => 'vendor_content_email_registered',
                 'val'   => '<h1 style="text-align: center;">Welcome!</h1>
                             <h3>Hello [first_name] [last_name]</h3>
-                            <p>Thank you for signing up with Booking Core! We hope you enjoy your time with us.</p>
+                            <p>Thank you for signing up with ArabCode! We hope you enjoy your time with us.</p>
                             <p>Regards,</p>
-                            <p>Booking Core</p>',
+                            <p>ArabCode</p>',
                 'group' => 'vendor'
             ]);
         DB::table('core_settings')->insert([
@@ -766,7 +766,7 @@ class General extends Seeder
                             <p>Registration date: [created_at]</p>
                             <p>You can approved the request here: [link_approved]</p>
                             <p>Regards,</p>
-                            <p>Booking Core</p>',
+                            <p>ArabCode</p>',
                 'group' => 'vendor'
             ]);
         //            Cookie agreement
@@ -796,7 +796,7 @@ class General extends Seeder
                 ],
                 [
                     'name'  => "invoice_company_info",
-                    'val'   => "<p><span style=\"font-size: 14pt;\"><strong>Booking Core Company</strong></span></p>
+                    'val'   => "<p><span style=\"font-size: 14pt;\"><strong>ArabCode Company</strong></span></p>
                                 <p>Ha Noi, Viet Nam</p>
                                 <p>www.bookingcore.org</p>",
                     'group' => "booking",

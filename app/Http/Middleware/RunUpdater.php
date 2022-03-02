@@ -412,9 +412,9 @@
                         'name'  => 'vendor_content_email_registered',
                         'val'   => '<h1 style="text-align: center;">Welcome!</h1>
                             <h3>Hello [first_name] [last_name]</h3>
-                            <p>Thank you for signing up with Booking Core! We hope you enjoy your time with us.</p>
+                            <p>Thank you for signing up with ArabCode! We hope you enjoy your time with us.</p>
                             <p>Regards,</p>
-                            <p>Booking Core</p>',
+                            <p>ArabCode</p>',
                         'group' => 'vendor'
                     ]
                 );
@@ -437,7 +437,7 @@
                             <p>Registration date: [created_at]</p>
                             <p>You can approved the request here: [link_approved]</p>
                             <p>Regards,</p>
-                            <p>Booking Core</p>',
+                            <p>ArabCode</p>',
                         'group' => 'vendor'
                     ]
                 );
@@ -454,7 +454,7 @@
                             <p>Content:[note]</p>
                             <p>Service:[service_link]</p>
                             <p>Regards,</p>
-                            <p>Booking Core</p>
+                            <p>ArabCode</p>
                             </div>",
                         'group' => "enquiry",
                     ]
@@ -473,7 +473,7 @@
                             <p>Service:[service_link]</p>
                             <p>Vendor:[vendor_link]</p>
                             <p>Regards,</p>
-                            <p>Booking Core</p>",
+                            <p>ArabCode</p>",
                         'group' => "enquiry",
                     ],
                 ]);

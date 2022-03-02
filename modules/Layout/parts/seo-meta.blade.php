@@ -5,10 +5,10 @@
     @php
         $page_title = $seo_meta['seo_title'] ?? $seo_meta['service_title'] ?? $page_title ?? "";
         if(!empty($page_title) and empty($seo_meta['is_homepage'])){
-            $page_title .= " - ".setting_item_with_lang('site_title' ,false,'Booking Core');
+            $page_title .= " - ".setting_item_with_lang('site_title' ,false,'ArabCode');
         }
         if(empty($page_title)){
-            $page_title = setting_item_with_lang('site_title' ,false,'Booking Core');
+            $page_title = setting_item_with_lang('site_title' ,false,'ArabCode');
         }
     @endphp
     <title>{{ $page_title }}</title>
@@ -28,9 +28,9 @@
 @else
     @php
         if(!empty($page_title)){
-            $page_title .= " - ".setting_item_with_lang('site_title' ,false,'Booking Core');
+            $page_title .= " - ".setting_item_with_lang('site_title' ,false,'ArabCode');
         }else{
-            $page_title = setting_item_with_lang('site_title' ,false,'Booking Core');
+            $page_title = setting_item_with_lang('site_title' ,false,'ArabCode');
         }
     @endphp
     <title>{{ $page_title }}</title>

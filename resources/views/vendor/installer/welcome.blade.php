@@ -5,7 +5,7 @@
 @endsection
 
 @section('title')
-    {{ __('Booking Core :version Installer',['version'=>config('app.version')]) }}
+    {{ __('ArabCode :version Installer',['version'=>config('app.version')]) }}
 @endsection
 
 @section('container')

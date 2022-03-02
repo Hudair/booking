@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ $page_title ?? 'Dashboard'}} - {{setting_item('site_title') ?? 'Booking Core'}}</title>
+    <title>{{ $page_title ?? 'Dashboard'}} - {{setting_item('site_title') ?? 'ArabCode'}}</title>
 
     @php
         $favicon = setting_item('site_favicon');

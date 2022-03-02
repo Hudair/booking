@@ -4780,7 +4780,7 @@ CREATE TABLE IF NOT EXISTS `core_menus` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table booking.core_menus: ~0 rows (approximately)
+-- Dumping data for table booking.core_menus: ~1 rows (approximately)
 /*!40000 ALTER TABLE `core_menus` DISABLE KEYS */;
 INSERT INTO `core_menus` (`id`, `name`, `items`, `create_user`, `update_user`, `origin_id`, `lang`, `created_at`, `updated_at`) VALUES
 	(1, 'Main Menu', '[{"name":"Home","url":"\\/","item_model":"custom","model_name":"Custom","children":[{"name":"Home Page","url":"\\/","item_model":"custom","children":[]},{"name":"Home Page v2","url":"\\/page\\/home-page-v2","item_model":"custom","children":[]},{"name":"Home Hotel","url":"\\/page\\/hotel","item_model":"custom","children":[]},{"name":"Home Tour Agency","url":"\\/page\\/home-tour-agency","item_model":"custom","children":[]},{"name":"Home Tour","url":"\\/page\\/tour","item_model":"custom","children":[]},{"name":"Home Space","url":"\\/page\\/space","item_model":"custom","children":[]},{"name":"Home Car","url":"\\/page\\/car","item_model":"custom","children":[]}]},{"name":"Hotel","url":"\\/hotel","item_model":"custom","model_name":"Custom","children":[{"name":"Hotel List","url":"\\/hotel","item_model":"custom","model_name":"Custom","children":[]},{"name":"Hotel Map","url":"\\/hotel?_layout=map","item_model":"custom","model_name":"Custom","children":[]},{"name":"Hotel Detail","url":"\\/hotel\\/parian-holiday-villas","item_model":"custom","model_name":"Custom","children":[]}]},{"name":"Tours","url":"\\/tour","item_model":"custom","model_name":"Custom","children":[{"name":"Tour List","url":"\\/tour","item_model":"custom","model_name":"Custom","children":[]},{"name":"Tour Map","url":"\\/tour?_layout=map","item_model":"custom","model_name":"Custom","children":[]},{"name":"Tour Detail","url":"\\/tour\\/paris-vacation-travel","item_model":"custom","model_name":"Custom","children":[]}]},{"name":"Space","url":"\\/space","item_model":"custom","model_name":"Custom","children":[{"name":"Space List","url":"\\/space","item_model":"custom","model_name":"Custom","children":[]},{"name":"Space Map","url":"\\/space?_layout=map","item_model":"custom","model_name":"Custom","children":[]},{"name":"Space Detail","url":"\\/space\\/stay-greenwich-village","item_model":"custom","model_name":"Custom","children":[]}]},{"name":"Car","url":"\\/car","item_model":"custom","model_name":"Custom","children":[{"name":"Car List","url":"\\/car","item_model":"custom","model_name":"Custom","children":[]},{"name":"Car Map","url":"\\/car?_layout=map","item_model":"custom","model_name":"Custom","children":[]},{"name":"Car Detail","url":"\\/car\\/vinfast-lux-a20-plus","item_model":"custom","model_name":"Custom","children":[]}]},{"name":"Event","url":"\\/event","item_model":"custom","model_name":"Custom","children":[{"name":"Event List","url":"\\/event","item_model":"custom","model_name":"Custom","children":[]},{"name":"Event Map","url":"\\/event?_layout=map","item_model":"custom","model_name":"Custom","children":[]},{"name":"Event Detail","url":"\\/event\\/aspen-glade-weddings-events","item_model":"custom","model_name":"Custom","children":[]}]},{"name":"Flight","url":"\\/flight","item_model":"custom","model_name":"Custom"},{"name":"Boat","url":"\\/boat","item_model":"custom","model_name":"Custom","children":[{"name":"Boat List","url":"\\/boat","item_model":"custom","model_name":"Custom","children":[]},{"name":"Boat Map","url":"\\/boat?_layout=map","item_model":"custom","model_name":"Custom","children":[]},{"name":"Boat Detail","url":"\\/boat\\/blue-moon-yc-300","item_model":"custom","model_name":"Custom","children":[]}]},{"name":"Pages","url":"#","item_model":"custom","model_name":"Custom","children":[{"name":"News List","url":"\\/news","item_model":"custom","model_name":"Custom","children":[]},{"name":"News Detail","url":"\\/news\\/morning-in-the-northern-sea","item_model":"custom","model_name":"Custom","children":[]},{"name":"Location Detail","url":"\\/location\\/paris","item_model":"custom","children":[]},{"name":"Become a vendor","url":"\\/page\\/become-a-vendor","item_model":"custom","children":[]},{"name":"Contact","url":"\\/contact","item_model":"custom","model_name":"Custom","children":[]}]}]', 1, NULL, NULL, NULL, '2022-03-01 18:47:01', NULL);
@@ -5389,7 +5389,7 @@ INSERT INTO `core_settings` (`id`, `name`, `group`, `val`, `autoload`, `create_u
 	(3, 'enable_rtl_egy', 'general', '1', NULL, NULL, NULL, NULL, NULL, NULL),
 	(4, 'menu_locations', 'general', '{"primary":1}', NULL, NULL, NULL, NULL, NULL, NULL),
 	(5, 'admin_email', 'general', 'contact@bookingcore.test', NULL, NULL, NULL, NULL, NULL, NULL),
-	(6, 'email_from_name', 'general', 'ArabCode', NULL, NULL, NULL, NULL, NULL, NULL),
+	(6, 'email_from_name', 'general', 'Booking Core', NULL, NULL, NULL, NULL, NULL, NULL),
 	(7, 'email_from_address', 'general', 'contact@bookingcore.test', NULL, NULL, NULL, NULL, NULL, NULL),
 	(8, 'logo_id', 'general', '226', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:20:35'),
 	(9, 'site_favicon', 'general', '227', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:20:35'),
@@ -5408,7 +5408,7 @@ INSERT INTO `core_settings` (`id`, `name`, `group`, `val`, `autoload`, `create_u
 	(22, 'page_contact_title_ja', 'general', 'あなたからの御一報をお待ち', NULL, NULL, NULL, NULL, NULL, NULL),
 	(23, 'page_contact_sub_title', 'general', 'Send us a message and we\'ll respond as soon as possible', NULL, NULL, NULL, NULL, NULL, NULL),
 	(24, 'page_contact_sub_title_ja', 'general', '私たちにメッセージを送ってください、私たちはできるだ', NULL, NULL, NULL, NULL, NULL, NULL),
-	(25, 'page_contact_desc', 'general', '<!DOCTYPE html><html><head></head><body><h3>ArabCode</h3><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Tell. + 00 222 444 33</p><p>Email. hello@yoursite.com</p><p>1355 Market St, Suite 900San, Francisco, CA 94103 United States</p></body></html>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(25, 'page_contact_desc', 'general', '<!DOCTYPE html><html><head></head><body><h3>Booking Core</h3><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Tell. + 00 222 444 33</p><p>Email. hello@yoursite.com</p><p>1355 Market St, Suite 900San, Francisco, CA 94103 United States</p></body></html>', NULL, NULL, NULL, NULL, NULL, NULL),
 	(26, 'page_contact_image', 'general', '9', NULL, NULL, NULL, NULL, NULL, NULL),
 	(27, 'currency_main', 'payment', 'usd', NULL, NULL, NULL, NULL, NULL, NULL),
 	(28, 'currency_format', 'payment', 'left', NULL, NULL, NULL, NULL, NULL, NULL),
@@ -5423,14 +5423,14 @@ INSERT INTO `core_settings` (`id`, `name`, `group`, `val`, `autoload`, `create_u
 	(37, 'date_format', 'general', 'm/d/Y', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:20:35'),
 	(38, 'site_title', 'general', 'Arabcode Booking', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:20:35'),
 	(39, 'site_timezone', 'general', 'UTC', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:20:35'),
-	(40, 'site_title', 'general', 'ArabCode', NULL, NULL, NULL, NULL, NULL, NULL),
-	(41, 'email_header', 'general', '<h1 class="site-title" style="text-align: center">ArabCode</h1>', NULL, NULL, NULL, NULL, NULL, NULL),
-	(42, 'email_footer', 'general', '<p class="" style="text-align: center">&copy; 2019 ArabCode. All rights reserved</p>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(40, 'site_title', 'general', 'Booking Core', NULL, NULL, NULL, NULL, NULL, NULL),
+	(41, 'email_header', 'general', '<h1 class="site-title" style="text-align: center">Booking Core</h1>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(42, 'email_footer', 'general', '<p class="" style="text-align: center">&copy; 2019 Booking Core. All rights reserved</p>', NULL, NULL, NULL, NULL, NULL, NULL),
 	(43, 'enable_mail_user_registered', 'user', '1', NULL, NULL, NULL, NULL, NULL, NULL),
-	(44, 'user_content_email_registered', 'user', '<h1 style="text-align: center">Welcome!</h1>\r\n                    <h3>Hello [first_name] [last_name]</h3>\r\n                    <p>Thank you for signing up with ArabCode! We hope you enjoy your time with us.</p>\r\n                    <p>Regards,</p>\r\n                    <p>ArabCode</p>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(44, 'user_content_email_registered', 'user', '<h1 style="text-align: center">Welcome!</h1>\r\n                    <h3>Hello [first_name] [last_name]</h3>\r\n                    <p>Thank you for signing up with Booking Core! We hope you enjoy your time with us.</p>\r\n                    <p>Regards,</p>\r\n                    <p>Booking Core</p>', NULL, NULL, NULL, NULL, NULL, NULL),
 	(45, 'admin_enable_mail_user_registered', 'user', '1', NULL, NULL, NULL, NULL, NULL, NULL),
-	(46, 'admin_content_email_user_registered', 'user', '<h3>Hello Administrator</h3>\r\n                    <p>We have new registration</p>\r\n                    <p>Full name: [first_name] [last_name]</p>\r\n                    <p>Email: [email]</p>\r\n                    <p>Regards,</p>\r\n                    <p>ArabCode</p>', NULL, NULL, NULL, NULL, NULL, NULL),
-	(47, 'user_content_email_forget_password', 'user', '<h1>Hello!</h1>\r\n                    <p>You are receiving this email because we received a password reset request for your account.</p>\r\n                    <p style="text-align: center">[button_reset_password]</p>\r\n                    <p>This password reset link expire in 60 minutes.</p>\r\n                    <p>If you did not request a password reset, no further action is required.\r\n                    </p>\r\n                    <p>Regards,</p>\r\n                    <p>ArabCode</p>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(46, 'admin_content_email_user_registered', 'user', '<h3>Hello Administrator</h3>\r\n                    <p>We have new registration</p>\r\n                    <p>Full name: [first_name] [last_name]</p>\r\n                    <p>Email: [email]</p>\r\n                    <p>Regards,</p>\r\n                    <p>Booking Core</p>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(47, 'user_content_email_forget_password', 'user', '<h1>Hello!</h1>\r\n                    <p>You are receiving this email because we received a password reset request for your account.</p>\r\n                    <p style="text-align: center">[button_reset_password]</p>\r\n                    <p>This password reset link expire in 60 minutes.</p>\r\n                    <p>If you did not request a password reset, no further action is required.\r\n                    </p>\r\n                    <p>Regards,</p>\r\n                    <p>Booking Core</p>', NULL, NULL, NULL, NULL, NULL, NULL),
 	(48, 'email_driver', 'email', 'log', NULL, NULL, NULL, NULL, NULL, NULL),
 	(49, 'email_host', 'email', 'smtp.mailgun.org', NULL, NULL, NULL, NULL, NULL, NULL),
 	(50, 'email_port', 'email', '587', NULL, NULL, NULL, NULL, NULL, NULL),
@@ -5453,9 +5453,9 @@ INSERT INTO `core_settings` (`id`, `name`, `group`, `val`, `autoload`, `create_u
 	(67, 'booking_enquiry_for_boat', 'enquiry', '1', NULL, NULL, NULL, NULL, NULL, NULL),
 	(68, 'booking_enquiry_type', 'enquiry', 'booking_and_enquiry', NULL, NULL, NULL, NULL, NULL, NULL),
 	(69, 'booking_enquiry_enable_mail_to_vendor', 'enquiry', '1', NULL, NULL, NULL, NULL, NULL, NULL),
-	(70, 'booking_enquiry_mail_to_vendor_content', 'enquiry', '<h3>Hello [vendor_name]</h3>\r\n                            <p>You get new inquiry request from [email]</p>\r\n                            <p>Name :[name]</p>\r\n                            <p>Emai:[email]</p>\r\n                            <p>Phone:[phone]</p>\r\n                            <p>Content:[note]</p>\r\n                            <p>Service:[service_link]</p>\r\n                            <p>Regards,</p>\r\n                            <p>ArabCode</p>\r\n                            </div>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(70, 'booking_enquiry_mail_to_vendor_content', 'enquiry', '<h3>Hello [vendor_name]</h3>\r\n                            <p>You get new inquiry request from [email]</p>\r\n                            <p>Name :[name]</p>\r\n                            <p>Emai:[email]</p>\r\n                            <p>Phone:[phone]</p>\r\n                            <p>Content:[note]</p>\r\n                            <p>Service:[service_link]</p>\r\n                            <p>Regards,</p>\r\n                            <p>Booking Core</p>\r\n                            </div>', NULL, NULL, NULL, NULL, NULL, NULL),
 	(71, 'booking_enquiry_enable_mail_to_admin', 'enquiry', '1', NULL, NULL, NULL, NULL, NULL, NULL),
-	(72, 'booking_enquiry_mail_to_admin_content', 'enquiry', '<h3>Hello Administrator</h3>\r\n                            <p>You get new inquiry request from [email]</p>\r\n                            <p>Name :[name]</p>\r\n                            <p>Emai:[email]</p>\r\n                            <p>Phone:[phone]</p>\r\n                            <p>Content:[note]</p>\r\n                            <p>Service:[service_link]</p>\r\n                            <p>Vendor:[vendor_link]</p>\r\n                            <p>Regards,</p>\r\n                            <p>ArabCode</p>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(72, 'booking_enquiry_mail_to_admin_content', 'enquiry', '<h3>Hello Administrator</h3>\r\n                            <p>You get new inquiry request from [email]</p>\r\n                            <p>Name :[name]</p>\r\n                            <p>Emai:[email]</p>\r\n                            <p>Phone:[phone]</p>\r\n                            <p>Content:[note]</p>\r\n                            <p>Service:[service_link]</p>\r\n                            <p>Vendor:[vendor_link]</p>\r\n                            <p>Regards,</p>\r\n                            <p>Booking Core</p>', NULL, NULL, NULL, NULL, NULL, NULL),
 	(73, 'vendor_enable', 'vendor', '1', NULL, NULL, NULL, NULL, NULL, NULL),
 	(74, 'vendor_commission_type', 'vendor', 'percent', NULL, NULL, NULL, NULL, NULL, NULL),
 	(75, 'vendor_commission_amount', 'vendor', '10', NULL, NULL, NULL, NULL, NULL, NULL),
@@ -5464,14 +5464,14 @@ INSERT INTO `core_settings` (`id`, `name`, `group`, `val`, `autoload`, `create_u
 	(78, 'vendor_show_email', 'vendor', '1', NULL, NULL, NULL, NULL, NULL, NULL),
 	(79, 'vendor_show_phone', 'vendor', '1', NULL, NULL, NULL, NULL, NULL, NULL),
 	(80, 'enable_mail_vendor_registered', 'vendor', '1', NULL, NULL, NULL, NULL, NULL, NULL),
-	(81, 'vendor_content_email_registered', 'vendor', '<h1 style="text-align: center;">Welcome!</h1>\r\n                            <h3>Hello [first_name] [last_name]</h3>\r\n                            <p>Thank you for signing up with ArabCode! We hope you enjoy your time with us.</p>\r\n                            <p>Regards,</p>\r\n                            <p>ArabCode</p>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(81, 'vendor_content_email_registered', 'vendor', '<h1 style="text-align: center;">Welcome!</h1>\r\n                            <h3>Hello [first_name] [last_name]</h3>\r\n                            <p>Thank you for signing up with Booking Core! We hope you enjoy your time with us.</p>\r\n                            <p>Regards,</p>\r\n                            <p>Booking Core</p>', NULL, NULL, NULL, NULL, NULL, NULL),
 	(82, 'admin_enable_mail_vendor_registered', 'vendor', '1', NULL, NULL, NULL, NULL, NULL, NULL),
-	(83, 'admin_content_email_vendor_registered', 'vendor', '<h3>Hello Administrator</h3>\r\n                            <p>An user has been registered as Vendor. Please check the information bellow:</p>\r\n                            <p>Full name: [first_name] [last_name]</p>\r\n                            <p>Email: [email]</p>\r\n                            <p>Registration date: [created_at]</p>\r\n                            <p>You can approved the request here: [link_approved]</p>\r\n                            <p>Regards,</p>\r\n                            <p>ArabCode</p>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(83, 'admin_content_email_vendor_registered', 'vendor', '<h3>Hello Administrator</h3>\r\n                            <p>An user has been registered as Vendor. Please check the information bellow:</p>\r\n                            <p>Full name: [first_name] [last_name]</p>\r\n                            <p>Email: [email]</p>\r\n                            <p>Registration date: [created_at]</p>\r\n                            <p>You can approved the request here: [link_approved]</p>\r\n                            <p>Regards,</p>\r\n                            <p>Booking Core</p>', NULL, NULL, NULL, NULL, NULL, NULL),
 	(84, 'cookie_agreement_enable', 'advance', '1', NULL, NULL, NULL, NULL, NULL, NULL),
 	(85, 'cookie_agreement_button_text', 'advance', 'Got it', NULL, NULL, NULL, NULL, NULL, NULL),
 	(86, 'cookie_agreement_content', 'advance', '<p>This website requires cookies to provide all of its features. By using our website, you agree to our use of cookies. <a href=\'#\'>More info</a></p>', NULL, NULL, NULL, NULL, NULL, NULL),
 	(87, 'logo_invoice_id', 'booking', '8', NULL, NULL, NULL, NULL, NULL, NULL),
-	(88, 'invoice_company_info', 'booking', '<p><span style="font-size: 14pt;"><strong>ArabCode Company</strong></span></p>\r\n                                <p>Ha Noi, Viet Nam</p>\r\n                                <p>www.bookingcore.org</p>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(88, 'invoice_company_info', 'booking', '<p><span style="font-size: 14pt;"><strong>Booking Core Company</strong></span></p>\r\n                                <p>Ha Noi, Viet Nam</p>\r\n                                <p>www.bookingcore.org</p>', NULL, NULL, NULL, NULL, NULL, NULL),
 	(89, 'news_page_list_title', 'news', 'News', NULL, NULL, NULL, NULL, NULL, NULL),
 	(90, 'news_page_list_banner', 'news', '121', NULL, NULL, NULL, NULL, NULL, NULL),
 	(91, 'news_sidebar', 'news', '[{"title":null,"content":null,"type":"search_form"},{"title":"About Us","content":"Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa","type":"content_text"},{"title":"Recent News","content":null,"type":"recent_news"},{"title":"Categories","content":null,"type":"category"},{"title":"Tags","content":null,"type":"tag"}]', NULL, NULL, NULL, NULL, NULL, NULL),
@@ -5554,8 +5554,8 @@ INSERT INTO `core_settings` (`id`, `name`, `group`, `val`, `autoload`, `create_u
 	(168, 'update_to_150', NULL, '1', NULL, NULL, NULL, NULL, '2022-03-01 18:51:11', '2022-03-01 18:51:11'),
 	(169, 'update_to_151', NULL, '1', NULL, NULL, NULL, NULL, '2022-03-01 18:51:19', '2022-03-01 18:51:19'),
 	(170, 'update_to_160', NULL, '1', NULL, NULL, NULL, NULL, '2022-03-01 18:51:20', '2022-03-01 18:51:20'),
-	(171, 'booking_enquiry_enable_mail_to_vendor_content', 'enquiry', '<h3>Hello [vendor_name]</h3>\r\n                            <p>You get new inquiry request from [email]</p>\r\n                            <p>Name :[name]</p>\r\n                            <p>Emai:[email]</p>\r\n                            <p>Phone:[phone]</p>\r\n                            <p>Content:[note]</p>\r\n                            <p>Service:[service_link]</p>\r\n                            <p>Regards,</p>\r\n                            <p>ArabCode</p>\r\n                            </div>', NULL, NULL, NULL, NULL, NULL, NULL),
-	(172, 'booking_enquiry_enable_mail_to_admin_content', 'enquiry', '<h3>Hello Administrator</h3>\r\n                            <p>You get new inquiry request from [email]</p>\r\n                            <p>Name :[name]</p>\r\n                            <p>Emai:[email]</p>\r\n                            <p>Phone:[phone]</p>\r\n                            <p>Content:[note]</p>\r\n                            <p>Service:[service_link]</p>\r\n                            <p>Vendor:[vendor_link]</p>\r\n                            <p>Regards,</p>\r\n                            <p>ArabCode</p>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(171, 'booking_enquiry_enable_mail_to_vendor_content', 'enquiry', '<h3>Hello [vendor_name]</h3>\r\n                            <p>You get new inquiry request from [email]</p>\r\n                            <p>Name :[name]</p>\r\n                            <p>Emai:[email]</p>\r\n                            <p>Phone:[phone]</p>\r\n                            <p>Content:[note]</p>\r\n                            <p>Service:[service_link]</p>\r\n                            <p>Regards,</p>\r\n                            <p>Booking Core</p>\r\n                            </div>', NULL, NULL, NULL, NULL, NULL, NULL),
+	(172, 'booking_enquiry_enable_mail_to_admin_content', 'enquiry', '<h3>Hello Administrator</h3>\r\n                            <p>You get new inquiry request from [email]</p>\r\n                            <p>Name :[name]</p>\r\n                            <p>Emai:[email]</p>\r\n                            <p>Phone:[phone]</p>\r\n                            <p>Content:[note]</p>\r\n                            <p>Service:[service_link]</p>\r\n                            <p>Vendor:[vendor_link]</p>\r\n                            <p>Regards,</p>\r\n                            <p>Booking Core</p>', NULL, NULL, NULL, NULL, NULL, NULL),
 	(173, 'update_to_170', NULL, '1', NULL, NULL, NULL, NULL, '2022-03-01 18:51:22', '2022-03-01 18:51:22'),
 	(174, 'check_db_engine', NULL, '1', NULL, NULL, NULL, NULL, '2022-03-01 18:51:22', '2022-03-01 18:51:22'),
 	(175, 'wallet_credit_exchange_rate', NULL, '1', NULL, NULL, NULL, NULL, '2022-03-01 18:51:24', '2022-03-01 18:51:24'),
@@ -5563,13 +5563,13 @@ INSERT INTO `core_settings` (`id`, `name`, `group`, `val`, `autoload`, `create_u
 	(177, 'wallet_deposit_type', NULL, 'list', NULL, NULL, NULL, NULL, '2022-03-01 18:51:24', '2022-03-01 18:51:24'),
 	(178, 'wallet_deposit_lists', NULL, '[{"name":"100$","amount":100,"credit":100},{"name":"Bonus 10%","amount":500,"credit":550},{"name":"Bonus 15%","amount":1000,"credit":1150}]', NULL, NULL, NULL, NULL, '2022-03-01 18:51:24', '2022-03-01 18:51:24'),
 	(179, 'wallet_new_deposit_admin_subject', NULL, 'New credit purchase', NULL, NULL, NULL, NULL, '2022-03-01 18:51:24', '2022-03-01 18:51:24'),
-	(180, 'wallet_new_deposit_admin_content', NULL, '\r\n            <h1>Hello [first_name]!</h1>\r\n            <p>New order has been made:</p>\r\n            <p>User ID: [create_user]</p>\r\n            <p>Amount: [amount]</p>\r\n            <p>Credit: [credit]</p>\r\n            <p>Gateway: [payment_gateway]</p>\r\n            <p>Regards,<br>ArabCode</p>', NULL, NULL, NULL, NULL, '2022-03-01 18:51:25', '2022-03-01 18:51:25'),
+	(180, 'wallet_new_deposit_admin_content', NULL, '\r\n            <h1>Hello [first_name]!</h1>\r\n            <p>New order has been made:</p>\r\n            <p>User ID: [create_user]</p>\r\n            <p>Amount: [amount]</p>\r\n            <p>Credit: [credit]</p>\r\n            <p>Gateway: [payment_gateway]</p>\r\n            <p>Regards,<br>Booking Core</p>', NULL, NULL, NULL, NULL, '2022-03-01 18:51:25', '2022-03-01 18:51:25'),
 	(181, 'wallet_new_deposit_customer_subject', NULL, 'Thank you for your purchasing', NULL, NULL, NULL, NULL, '2022-03-01 18:51:25', '2022-03-01 18:51:25'),
-	(182, 'wallet_new_deposit_customer_content', NULL, '\r\n            <h1>Hello [first_name]!</h1>\r\n            <p>New order has been made:</p>\r\n            <p>User ID: [create_user]</p>\r\n            <p>Amount: [amount]</p>\r\n            <p>Credit: [credit]</p>\r\n            <p>Gateway: [payment_gateway]</p>\r\n            <p>Regards,<br>ArabCode</p>', NULL, NULL, NULL, NULL, '2022-03-01 18:51:25', '2022-03-01 18:51:25'),
+	(182, 'wallet_new_deposit_customer_content', NULL, '\r\n            <h1>Hello [first_name]!</h1>\r\n            <p>New order has been made:</p>\r\n            <p>User ID: [create_user]</p>\r\n            <p>Amount: [amount]</p>\r\n            <p>Credit: [credit]</p>\r\n            <p>Gateway: [payment_gateway]</p>\r\n            <p>Regards,<br>Booking Core</p>', NULL, NULL, NULL, NULL, '2022-03-01 18:51:25', '2022-03-01 18:51:25'),
 	(183, 'wallet_update_deposit_admin_subject', NULL, 'Credit purchase updated', NULL, NULL, NULL, NULL, '2022-03-01 18:51:25', '2022-03-01 18:51:25'),
-	(184, 'wallet_update_deposit_admin_content', NULL, '\r\n            <h1>Hello [first_name]!</h1>\r\n            <p>Order has been updated:</p>\r\n            <p>Order Status: <strong>[status_name]</strong></p>\r\n            <p>User ID: [create_user]</p>\r\n            <p>Amount: [amount]</p>\r\n            <p>Credit: [credit]</p>\r\n            <p>Gateway: [payment_gateway]</p>\r\n            <p>Regards,<br>ArabCode</p>', NULL, NULL, NULL, NULL, '2022-03-01 18:51:25', '2022-03-01 18:51:25'),
+	(184, 'wallet_update_deposit_admin_content', NULL, '\r\n            <h1>Hello [first_name]!</h1>\r\n            <p>Order has been updated:</p>\r\n            <p>Order Status: <strong>[status_name]</strong></p>\r\n            <p>User ID: [create_user]</p>\r\n            <p>Amount: [amount]</p>\r\n            <p>Credit: [credit]</p>\r\n            <p>Gateway: [payment_gateway]</p>\r\n            <p>Regards,<br>Booking Core</p>', NULL, NULL, NULL, NULL, '2022-03-01 18:51:25', '2022-03-01 18:51:25'),
 	(185, 'wallet_update_deposit_customer_subject', NULL, 'Your credit purchase updated', NULL, NULL, NULL, NULL, '2022-03-01 18:51:25', '2022-03-01 18:51:25'),
-	(186, 'wallet_update_deposit_customer_content', NULL, '\r\n            <h1>Hello [first_name]!</h1>\r\n            <p>Order has been updated:</p>\r\n            <p>Order Status: <strong>[status_name]</strong></p>\r\n            <p>User ID: [create_user]</p>\r\n            <p>Amount: [amount]</p>\r\n            <p>Credit: [credit]</p>\r\n            <p>Gateway: [payment_gateway]</p>\r\n            <p>Regards,<br>ArabCode</p>', NULL, NULL, NULL, NULL, '2022-03-01 18:51:25', '2022-03-01 18:51:25'),
+	(186, 'wallet_update_deposit_customer_content', NULL, '\r\n            <h1>Hello [first_name]!</h1>\r\n            <p>Order has been updated:</p>\r\n            <p>Order Status: <strong>[status_name]</strong></p>\r\n            <p>User ID: [create_user]</p>\r\n            <p>Amount: [amount]</p>\r\n            <p>Credit: [credit]</p>\r\n            <p>Gateway: [payment_gateway]</p>\r\n            <p>Regards,<br>Booking Core</p>', NULL, NULL, NULL, NULL, '2022-03-01 18:51:25', '2022-03-01 18:51:25'),
 	(187, 'update_to_181', NULL, '1', NULL, NULL, NULL, NULL, '2022-03-01 18:51:30', '2022-03-01 18:51:30'),
 	(188, 'update_to_182', NULL, '1', NULL, NULL, NULL, NULL, '2022-03-01 18:51:30', '2022-03-01 18:51:30'),
 	(189, 'update_to_190', NULL, '1', NULL, NULL, NULL, NULL, '2022-03-01 18:51:50', '2022-03-01 18:51:50'),
@@ -5724,7 +5724,7 @@ CREATE TABLE IF NOT EXISTS `core_translations` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4761 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table booking.core_translations: ~4,702 rows (approximately)
+-- Dumping data for table booking.core_translations: ~4,760 rows (approximately)
 /*!40000 ALTER TABLE `core_translations` DISABLE KEYS */;
 INSERT INTO `core_translations` (`id`, `locale`, `string`, `parent_id`, `create_user`, `update_user`, `last_build_at`, `deleted_at`, `created_at`, `updated_at`) VALUES
 	(1, 'raw', 'The provided password does not match your current password.', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:27:15', '2022-03-01 19:27:15'),
@@ -6541,7 +6541,7 @@ INSERT INTO `core_translations` (`id`, `locale`, `string`, `parent_id`, `create_
 	(812, 'raw', 'Settings Saved', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:27:48', '2022-03-01 19:27:48'),
 	(813, 'raw', 'Please enter license key', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:27:48', '2022-03-01 19:27:48'),
 	(814, 'raw', 'Can not connect to update server. Please check again', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:27:48', '2022-03-01 19:27:48'),
-	(815, 'raw', 'You are using latest version of ArabCode', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:27:48', '2022-03-01 19:27:48'),
+	(815, 'raw', 'You are using latest version of Booking Core', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:27:48', '2022-03-01 19:27:48'),
 	(816, 'raw', 'Can not get update file from server', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:27:48', '2022-03-01 19:27:48'),
 	(817, 'raw', 'Can not download update file to folder storage', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:27:48', '2022-03-01 19:27:48'),
 	(818, 'raw', 'Can not un-zip the package', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:27:48', '2022-03-01 19:27:48'),
@@ -6749,12 +6749,12 @@ INSERT INTO `core_translations` (`id`, `locale`, `string`, `parent_id`, `create_
 	(1020, 'raw', 'Translation manager of your website', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:07', '2022-03-01 19:28:07'),
 	(1021, 'raw', 'System Log Viewer', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:07', '2022-03-01 19:28:07'),
 	(1022, 'raw', 'Views and manage system log of your website', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:07', '2022-03-01 19:28:07'),
-	(1023, 'raw', 'Updater ArabCode', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:08', '2022-03-01 19:28:08'),
-	(1024, 'raw', 'Plugins for ArabCode', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:08', '2022-03-01 19:28:08'),
+	(1023, 'raw', 'Updater Booking Core', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:08', '2022-03-01 19:28:08'),
+	(1024, 'raw', 'Plugins for Booking Core', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:08', '2022-03-01 19:28:08'),
 	(1025, 'raw', 'No tools available', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:08', '2022-03-01 19:28:08'),
 	(1026, 'raw', 'System Updater', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:08', '2022-03-01 19:28:08'),
-	(1027, 'raw', 'Update ArabCode', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:08', '2022-03-01 19:28:08'),
-	(1028, 'raw', 'You are using newest version of ArabCode: :version', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:08', '2022-03-01 19:28:08'),
+	(1027, 'raw', 'Update booking core', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:08', '2022-03-01 19:28:08'),
+	(1028, 'raw', 'You are using newest version of Booking Core: :version', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:08', '2022-03-01 19:28:08'),
 	(1029, 'raw', 'Your license key: :key', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:09', '2022-03-01 19:28:09'),
 	(1030, 'raw', 'Last check for update: :date', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:09', '2022-03-01 19:28:09'),
 	(1031, 'raw', 'Last update success: :date', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:28:09', '2022-03-01 19:28:09'),
@@ -7744,12 +7744,12 @@ INSERT INTO `core_translations` (`id`, `locale`, `string`, `parent_id`, `create_
 	(2015, 'raw', 'Opacity', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
 	(2016, 'raw', 'Upload', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
 	(2017, 'raw', 'Apply watermark', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
-	(2018, 'raw', 'ArabCode by', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
+	(2018, 'raw', 'Booking Core by', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
 	(2019, 'raw', 'Upload', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
-	(2020, 'raw', 'https://arabcode.online', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
-	(2021, 'raw', 'ArabCode by', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
+	(2020, 'raw', 'https://www.bookingcore.org', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
+	(2021, 'raw', 'Booking Core by', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
 	(2022, 'raw', 'BookingCore Team', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
-	(2023, 'raw', 'https://arabcode.online', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
+	(2023, 'raw', 'https://www.bookingcore.org', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
 	(2024, 'raw', 'About Us', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
 	(2025, 'raw', 'BookingCore Team', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
 	(2026, 'raw', 'https://m.me/bookingcore', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:33', '2022-03-01 19:29:33'),
@@ -7760,10 +7760,10 @@ INSERT INTO `core_translations` (`id`, `locale`, `string`, `parent_id`, `create_
 	(2031, 'raw', 'Contact Us', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:34', '2022-03-01 19:29:34'),
 	(2032, 'raw', 'Dashboard', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:34', '2022-03-01 19:29:34'),
 	(2033, 'raw', 'Please check the form below for errors', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:34', '2022-03-01 19:29:34'),
-	(2034, 'raw', 'ArabCode', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:34', '2022-03-01 19:29:34'),
+	(2034, 'raw', 'Booking Core', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:34', '2022-03-01 19:29:34'),
 	(2035, 'raw', 'Dashboard', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:34', '2022-03-01 19:29:34'),
 	(2036, 'raw', 'Home', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:34', '2022-03-01 19:29:34'),
-	(2037, 'raw', 'ArabCode', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:34', '2022-03-01 19:29:34'),
+	(2037, 'raw', 'Booking Core', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:34', '2022-03-01 19:29:34'),
 	(2038, 'raw', 'Mark all as read', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:34', '2022-03-01 19:29:34'),
 	(2039, 'raw', 'Home', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:34', '2022-03-01 19:29:34'),
 	(2040, 'raw', 'Notifications', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:29:34', '2022-03-01 19:29:34'),
@@ -10362,10 +10362,10 @@ INSERT INTO `core_translations` (`id`, `locale`, `string`, `parent_id`, `create_
 	(4633, 'raw', 'installer_messages.updater.welcome.message', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:32:18', '2022-03-01 19:32:18'),
 	(4634, 'raw', 'installer_messages.welcome.templateTitle', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:32:18', '2022-03-01 19:32:18'),
 	(4635, 'raw', 'installer_messages.next', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:32:18', '2022-03-01 19:32:18'),
-	(4636, 'raw', 'ArabCode :version Installer', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:32:18', '2022-03-01 19:32:18'),
+	(4636, 'raw', 'Booking Core :version Installer', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:32:18', '2022-03-01 19:32:18'),
 	(4637, 'raw', 'installer_messages.welcome.templateTitle', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:32:18', '2022-03-01 19:32:18'),
 	(4638, 'raw', 'installer_messages.welcome.message', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:32:18', '2022-03-01 19:32:18'),
-	(4639, 'raw', 'ArabCode :version Installer', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:32:19', '2022-03-01 19:32:19'),
+	(4639, 'raw', 'Booking Core :version Installer', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:32:19', '2022-03-01 19:32:19'),
 	(4640, 'raw', 'installer_messages.welcome.next', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:32:19', '2022-03-01 19:32:19'),
 	(4641, 'raw', 'installer_messages.welcome.message', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:32:19', '2022-03-01 19:32:19'),
 	(4642, 'raw', 'Log file >50M, please download it.', NULL, 1, NULL, NULL, NULL, '2022-03-01 19:32:19', '2022-03-01 19:32:19'),
@@ -10622,7 +10622,7 @@ CREATE TABLE IF NOT EXISTS `media_files` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=228 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table booking.media_files: ~225 rows (approximately)
+-- Dumping data for table booking.media_files: ~227 rows (approximately)
 /*!40000 ALTER TABLE `media_files` DISABLE KEYS */;
 INSERT INTO `media_files` (`id`, `file_name`, `file_path`, `file_size`, `file_type`, `file_extension`, `create_user`, `update_user`, `deleted_at`, `app_id`, `app_user_id`, `file_width`, `file_height`, `created_at`, `updated_at`, `file_edit`) VALUES
 	(1, 'avatar', 'demo/general/avatar.jpg', NULL, 'image/jpeg', 'jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
@@ -10863,7 +10863,7 @@ CREATE TABLE IF NOT EXISTS `migrations` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table booking.migrations: ~61 rows (approximately)
+-- Dumping data for table booking.migrations: ~68 rows (approximately)
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 	(1, '2014_10_12_000000_create_users_table', 1),

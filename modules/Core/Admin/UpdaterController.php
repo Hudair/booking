@@ -80,7 +80,7 @@ class UpdaterController extends  AdminController
 
         $updater_latest_version = setting_item('updater_latest_version');
         if(empty($updater_latest_version) or version_compare(config('app.version'),$updater_latest_version,'>=')){
-            return $this->sendError(__("You are using latest version of Booking Core"));
+            return $this->sendError(__("You are using latest version of ArabCode"));
         }
 
         if(!class_exists('\ZipArchive'))
