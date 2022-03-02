@@ -169,7 +169,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 copy-right" >
-                        {{date('Y')}} &copy; {{__('ArabCode by')}} <a href="{{__('https://arabcode.online')}}" target="_blank">{{__('BookingCore Team')}}</a>
+                        {{date('Y')}} &copy; {{__('ArabCode by')}} <a href="{{__('https://arabcode.online')}}" target="_blank">{{__('Arabcode')}}</a>
                     </div>
                     <div class="col-md-6">
                         <div class="text-md-right footer-links d-none d-sm-block">
