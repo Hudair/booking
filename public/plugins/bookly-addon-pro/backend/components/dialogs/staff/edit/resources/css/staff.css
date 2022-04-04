@@ -1,0 +1,18 @@
+a.bookly-google-signin-button {
+    width: 191px;
+    height: 46px;
+    background-image: url('../images/btn_google_signin_dark_web.png');
+    display: block;
+    transition: unset;
+}
+a.bookly-google-signin-button:hover{
+    background-position: 0 -46px;
+}
+a.bookly-google-signin-button:active{
+    background-position: 0 -92px;
+}
+a.bookly-ms-signin-button {
+    width: 215px;
+    height: 41px;
+    margin-left: 3px;
+}

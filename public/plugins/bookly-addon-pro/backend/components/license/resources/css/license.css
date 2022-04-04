@@ -1,0 +1,17 @@
+#bookly-tbs .bookly-board-backdrop {
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 1;
+    overflow-y: auto;
+}
+
+#bookly-tbs .bookly-board {
+    width: 50%;
+    margin: 10% 25% !important;
+}
+
+@media (max-width: 991px) {
+    #bookly-tbs .bookly-board {
+        width: 90%;
+        margin: 10% 5% !important;
+    }
+}

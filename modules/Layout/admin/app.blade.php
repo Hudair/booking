@@ -174,7 +174,7 @@
                     <div class="col-md-6">
                         <div class="text-md-right footer-links d-none d-sm-block">
                             <a href="{{__('https://arabcode.online')}}" target="_blank">{{__('About Us')}}</a>
-                            <a href="{{__('https://m.me/bookingcore')}}" target="_blank">{{__('Contact Us')}}</a>
+                            <a href="{{__('https://arabcode.onlinee')}}" target="_blank">{{__('Contact Us')}}</a>
                         </div>
                     </div>
                 </div>

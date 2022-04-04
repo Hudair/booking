@@ -1,0 +1,4 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+use Bookly\Backend\Components\Settings\Selects;
+Selects::renderSingle( 'bookly_gen_min_time_prior_booking', __( 'Minimum time requirement prior to booking', 'bookly' ), __( 'Set how late appointments can be booked (for example, require customers to book at least 1 hour before the appointment time).', 'bookly' ), $values['bookly_gen_min_time_prior_booking'] );
+Selects::renderSingle( 'bookly_gen_min_time_prior_cancel', __( 'Minimum time requirement prior to canceling', 'bookly' ), __( 'Set how late appointments can be cancelled (for example, require customers to cancel at least 1 hour before the appointment time).', 'bookly' ), $values['bookly_gen_min_time_prior_cancel'] );
